@@ -1,0 +1,43 @@
+.about-container {
+    background-color: red;
+    nav{
+        background-color: rgba;
+    }
+    .about {
+    width: 100%;
+    height: 1000px;
+    background-color: aqua;
+    // padding-top: 15%;
+
+
+    .aboutParagraph {
+        margin: 0 auto;
+        width: 75%;
+        height: 33%;
+        margin-bottom: 1%;
+  
+        h1 {
+          width: 150px;
+          font-size: 60px;
+          font-family: ProximaCondensed;
+          border-bottom: solid 2px black;
+        }
+        p {
+          font-size: 16px;
+          font-family: GillSans;
+        }
+      }
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+    .about {
+        min-height: 1200px;
+        .aboutParagraph {
+            flex-direction: column;
+            padding: 10px;
+        }
+
+    }
+}

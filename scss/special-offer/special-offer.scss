@@ -1,0 +1,76 @@
+.specialOffersContainer {
+    width: 1280px;
+  
+    margin: 0 auto;
+  
+    h1 {
+      width: 175px;
+      font-size: 30px;
+  
+      border-bottom: solid 1px black;
+    }
+  
+    .offer {
+  
+      width: 500px;
+      display: flex;
+      justify-content: space-between;
+     
+  
+      .offerImage {
+        width: 200px;
+        height: 280px;
+  
+        img {
+          width: 200px;
+          height: 280px;
+        }
+      }
+  
+      .offerInfo {
+        width: 100%;
+  
+        .offerHeader {
+          max-width: 300px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+  
+          h1 {
+            max-width: 196px;
+            font-size: 30px;
+            border-bottom: solid 1px black;
+          }
+        }
+  
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  
+  @media only screen and (max-width: 1060px) {
+    .specialOffersContainer {
+  
+      .offer {
+        flex-direction: column;
+        justify-content: center;
+
+        .offerInfo {
+          margin: 0 auto;
+  
+          .offerHeader {
+            max-width: 250px;
+          }
+  
+
+
+          p {
+            max-width: 300px;
+          }
+        }
+      }
+    }
+  }
+  

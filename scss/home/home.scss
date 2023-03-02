@@ -1,0 +1,252 @@
+.home {
+    margin: 0 auto;
+    .hero{  
+        font-family: 'Gill Sans';
+        height: 500px;
+        width: 100%;
+        background-image: url(../images/hero-image.png);
+        background-size: cover;
+        background-color: none;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        position: relative;
+
+        .hero-text {
+            color: white;
+            font-family: 'Gill Sans';
+            position: absolute;
+            text-align: center;
+            align-items: center;
+            display: flex;
+            justify-content: space-around;
+            text-decoration: none;
+            
+
+            position: absolute;
+            top: 170px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            .travel-fly{
+                text-decoration: none;
+                font-size: 60px;
+                list-style: none;
+                font-weight: 400;
+
+            }
+            .top-text{
+            padding: 5px;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            }
+            .bottom-text{
+
+                align-items: center;
+                display: flex;
+                justify-content: space-around;
+                text-align: center;
+
+            }
+
+        }
+        
+        .learn-more{
+            width: 125px;
+            padding: 5px 15px;
+            //top and top-left padding
+            background-color: #79ADDC;
+            color: white;
+            // display: flex;
+            // align-items: center;
+            // justify-content: space-between;
+            text-align: center;
+            border-radius: 25px;
+
+            position: absolute;
+            top: 350px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            
+            
+            a{
+                text-decoration: none;
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+        }
+    } 
+
+    .promo-trips{
+        margin-top: -50px;
+        //this puts the overlap over the hero image
+        min-height: 304px;
+        // background-co/lor: rgba(180, 180, 180, 0.5);
+
+        position: relative;
+        display: flex;
+        justify-content: space-evenly;
+
+        img{
+            width: 236px;
+            height: 304px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            
+        }
+
+        .israel{
+            width: 236px;
+            height: 304px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .usa{
+            width: 236px;
+            height: 304px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .australia{
+            width: 236px;
+            height: 304px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+
+    }
+
+ 
+
+
+    .booking{
+        min-height: 400px;
+        background-color: white;
+        padding: 50px;
+
+
+        .booking-wrapper{
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: white;
+
+        // input{
+        //     width: 95%;
+        //     height: 58px;
+        // }
+
+
+        .read-more{
+            width: 125px;
+            padding: 5px 15px;
+            //top and top-left padding
+            background-color: #79ADDC;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-align: center;
+            border-radius: 25px;
+
+            position: absolute;
+            top: 350px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            
+            
+            a{
+                text-decoration: none;
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+        }
+
+        .flexyflex{
+            justify-content: space-between;
+            display: flex;
+            align-items: center;
+
+            .size{
+                size: 5;
+            }
+        }
+        
+        
+        .inlined-label {
+            width: 49%;
+            height: 58px;
+            display: inline-block;
+            // float: left;
+            margin-left: 1%;
+            font-family: 'Gill Sans';
+            input {
+                width: 95%;
+                display: inline-block;
+          }
+
+
+        }
+
+        .move-over-again{
+            width: 51%;
+            float: right;
+        }
+
+        .inlined-label-comment{
+            width: 100%;
+            // display: inline-flex;
+        }
+
+        hr{
+            border: 0px;
+            clear: both;
+            visibility: hidden;
+            padding: 5px;
+        }
+    }   
+    
+    }
+
+    @media only screen and (max-width: 800px) {
+        .promo-trips{
+            flex-direction: column;
+            justify-content: center;
+            
+            img{
+                margin: 10px 10%;
+                padding: 10px 10%;
+                // padding-left: 10px 10%;
+            }
+        }
+        
+        .booking{
+            flex-direction: column;
+            justify-content: center;
+
+            .booking-wrapper{
+                flex-direction: column;
+                justify-content: center;
+                
+            }
+
+            .inlined-label-comment{
+                flex-direction: column;
+            }
+        }
+    }
+
+}

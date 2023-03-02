@@ -1,0 +1,44 @@
+.contactContainer {
+    width: 1280px;
+    margin: 0 auto;
+    padding-top: 125px;
+  
+    h1 {
+      width: 120px;
+      font-size: 30px;
+      border-bottom: solid 1px black;
+    }
+  
+    .contactInfo {
+        display: flex;
+        justify-content: space-between;
+        // align-items: center;
+      .map {
+        width: 400px;
+        margin-bottom: 50px;
+
+
+        img {
+          width: 400px;
+          height: 440px;
+          margin-bottom: 34px;
+        }
+  
+        .directions {
+          font-size: 18px;
+          font-family: GillSans;
+        }
+      }
+    }
+  }
+  
+  
+  @media only screen and (max-width: 1060px) {
+    .contactContainer {
+        justify-content: center;
+      .contactInfo {
+        flex-direction: column;
+      }
+    }
+  }
+  
